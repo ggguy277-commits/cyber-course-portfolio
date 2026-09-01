@@ -1,6 +1,6 @@
 # Cyber Course Portfolio
 
-This is my portfolio for the Kyberturvallisuus 15 ECVET course at [your institution].
+This is my portfolio for the Kyberturvallisuus 15 ECVET course at [Varia Ammattikoulu].
 
 ## Contents
 
@@ -13,7 +13,7 @@ This is my portfolio for the Kyberturvallisuus 15 ECVET course at [your institut
 
 ## About me
 
-[Your name or handle, one sentence about who you are]
+[Mykyta Mishchenko 18 vuotias nuorimies]
 
 ## License
 
