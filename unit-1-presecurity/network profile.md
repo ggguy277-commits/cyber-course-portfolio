@@ -1,9 +1,9 @@
 # Network Profile — [my machine]
 
 ## Identity
-- IPv4 address: 10.210.172.161
+- IPv4 address: 10.210.172.xxx
 - Subnet mask / CIDR: 255.255.248.0
-- MAC address: E8-65-38-21-69-65
+- MAC address: E8-65-38-21-69-xx
 - Network address: 10.210.168.0
 - Broadcast address: 10.210.168.255
 
