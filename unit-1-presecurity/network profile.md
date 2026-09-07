@@ -35,6 +35,8 @@
 - What surprised you about your own network?
 - Which open port (if any) would you want to investigate or close?
 - Which command do you think you'll use most often, and why?
+
+
 Reviewing my network scan revealed surprising insights into system behavior. I was surprised by the number of high-numbered dynamic ports (49664–49670) open across all interfaces (0.0.0.0). I assumed only user-launched applications opened ports, but Windows continuously runs background listeners for core services.
 
 The port I would investigate most closely is Port 445 (SMB). While useful for local file and printer sharing, exposing file-sharing protocols to public or untrusted networks creates unnecessary security risks if not properly filtered by a firewall.
