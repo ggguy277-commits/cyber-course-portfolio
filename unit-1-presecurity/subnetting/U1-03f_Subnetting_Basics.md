@@ -121,3 +121,59 @@
 - Network address of this subnet: 10.0.0.0
 - Broadcast of this subnet: 10.0.0.3
 - This is a host address. Mask /30 leaves only 2 bits for the host. The subnet mask is 4. For this reason, the IP address space is divided into very small blocks of 4 addresses each. Find a divisor (4), the nearest number that is divisible by 4 without a remainder is 0 so network address is 10.0.0.0. And broadcast is 4-1=3.
+
+## Four equal /26 subnets (T5)
+### First subnet:
+- Network Address: 192.168.10.0
+- Default Gateway: 192.168.10.1
+- Host Range Start: 192.168.10.1
+- Host Range End: 192.168.10.62
+- Broadcast Address: 192.168.10.63
+### Second subnet
+- Network Address: 192.168.10.64
+- Default Gateway: 192.168.10.65
+- Host Range Start: 192.168.10.65
+- Host Range End: 192.168.10.126
+- Broadcast Address: 192.168.10.127
+### Third subnet
+- Network Address: 192.168.10.128
+- Default Gateway: 192.168.10.129
+- Host Range Start: 192.168.10.129
+- Host Range End: 192.168.10.190
+- Broadcast Address: 192.168.10.191
+### Fourth subnet
+- Network Address: 192.168.10.192
+- Default Gateway: 192.168.10.193
+- Host Range Start: 192.168.10.193
+- Host Range End: 192.168.10.254
+- Broadcast Address: 192.168.10.255
+
+- The first subnet starts with 0. By adding a step of 64, we get the starting points of the following blocks: 0, 64, 128, 192.
+
+## Enough hosts? (T5)
+| CIDR | Total addresses | Usable hosts |
+| --- | --- | --- |
+| /24 | 256 | 254 |
+| /25 | 128 | 126 |
+| /26 | 64 | 62 |
+| /27 | 32 | 30 |
+| /28 | 16 | 14 |
+| /29 | 8 | 6 |
+| /30 | 4 | 2 |
+- Formula for usable hosts is total address minus 2.
+
+## Hex ↔ decimal ↔ binary refresher (T6)
+| Hex | Decimal | Binary 4 bits |
+| --- | --- | --- |
+| 0 | 0 | 0000 | 
+| 5 | 5 | 0101 |
+| a | 10 | 1010 |
+| f | 15 | 1111 |
+
+## Compress these IPv6 addresses (T6)
+- 2001:0df8:23f2:0000:0000:0000:0000:0f11 → 2001:df8:23f2:0:0:0:0:f11 → 2001:df8:23f2::f11
+- 2001:0000:00d0:00f2:0000:0000:0000:0f11 → 2001:0:d0:f2:0:0:0:f11 → 2001:0:d0:f2::f11
+- fe80:0000:0000:0000:0000:0000:0000:0001 → fe80:0:0:0:0:0:0:1 → fe80::1
+
+## A conceptual question (T6)
+- The reason why we need IPv6 is because now we are not having enough IPv4 addresses. IPv4 provides about 4.3 billion unique addresses, but there are more than 4.3 billion devices in the world, whereas IPv6 can provide as many unique addresses as there are grains of sand in the entire world.
