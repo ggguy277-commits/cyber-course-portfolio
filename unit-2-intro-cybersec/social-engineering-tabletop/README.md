@@ -12,4 +12,4 @@ I attach a screenshot in JPEG format, which is infected with an exploit program 
 Microsoft account. The boss will most likely believe the employee who has been working in this company for a long time
 and therefore open the JPEG file. Now I have access to the boss's account, and I can, for example, send malware to all
 employees, and basically, I can do a lot of things next having boss's account.
-## Phase 3 Critique
+
