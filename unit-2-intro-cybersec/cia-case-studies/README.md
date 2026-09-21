@@ -45,4 +45,14 @@
    2. If possible, preserve evidence of the attack so that, for example, defenders determine the scale of the        attack.
    3. Restore a website using backups.
 # Scenario D
-1. 
+1. CIA violation
+   - Integrity.
+2. Secondary impacts
+   - Confidentiality was compromised because the hacker most likely already knew the info about bank account details. In this way, was compromised the transparency of the information.
+3. Attack technique
+   - Business email compromise, Social Engineering, Unauthorized data modifictaion. The hackers managed to perfectly mimic the supplier’s email. The victim was taken in by the fake email and opened the file containing account number, which had been edited.
+4. Preventive comtrols
+   - Apply a DMARC policy to enable the filtering of phishing emails and spam. Enable multi-factor authentication for all staff email accounts. Apply the settings for flagging external emails so that staff can see a label on the email indicating that it is an external email from the internet.
+5. Damage limitation
+   1. If it possible, request a chargeback through this bank and freeze the account on the reasons of fraud.
+   2. Report a crime to Cyber Security Centre.
