@@ -23,4 +23,10 @@ creator’s wallet. The worm-like capabilities of this virus made it more danger
 did not require the involvement of both parties to spread, it found its own way to other devices.
 # 5. How it was discovered and how it was stopped
 A researcher Marcus Hutchins discovered accidently a vulnerability in the virus – sort of like an emergency stop button (kill switch). The sense of it was 
-that the virus asks, ‘Can I connect to a specific domain name?’, which looked like a random string of letters ending in .com. 
+that the virus asks, ‘Can I connect to a specific domain name?’, which looked like a random string of letters ending in .com. When the programme connects to the domain, it stops working. Then he discovered this, he registered the domain for 10 bucks. Now the virus can connect to that domain, and as a result, it stops working.
+# 6. What could have helped
+The thing is that automatic system updates were disabled on most computers. It would probably be a good idea to phase out systems running Windows XP and Windows Server 2003, since Microsoft no longer supports them. It's also a good idea to have backup of files in case a virus has already infected device.
+# 7. The broader lesson
+A major international cyber incident may arise not because of some super technology, but due to a combination of a known vulnerability, a missing update, outdated infrastructure and a leaked government tool.
+# 8. Personal takeaway
+I suppose this incident has changed my view on software updates and just how important they can be.
