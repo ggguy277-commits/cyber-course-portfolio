@@ -113,18 +113,29 @@ A friend, knowing that I’m interested in cybersecurity in my spare time, has a
 Although I’m probably not qualified in the field of cybersecurity, he’s still asking for my help.
 
 **What's legally at stake:**
-I could violate Finnish criminal law on unauthorized access.
+I could violate Finnish criminal law (Chapter 38, Section 8 of the Criminal Code) on unauthorized access doing whatever my friend wants. 
 
 **What's ethically at stake:**
-
+I’ll be putting my reputation and our friendship at risk if I agree to his request and end up causing any trouble.
 
 **What I would do:**
-[3–5 sentences describing your specific action. Not "I'd be careful" — what exact
-steps would you take?]
+I would politely decline and suggest they contact IT support for help. 
 
 **What I would NOT do, and why:**
-[2–3 sentences naming what's tempting but you'd refuse to do.]
+I wouldn’t have agreed to my friend’s request and wouldn’t have helped him.
 
 **Who I would consult:**
-[1–2 sentences. Who in the organization (or outside it) would you bring this to,
-and at what point? "No one" is rarely the right answer.]
+I would ask the IT support team for help on behalf of my friend. Or I would have asked a friend to contact IT support
+
+---
+
+### Personal code of conduct
+- I will not use other people's personal information—not even that of my colleagues—even if they ask me to.
+- I won't risk the company's reputation—or my own—for the sake of someone else's risky venture.
+- When I discover a vulnerability on a website, I report it to my supervisor or IT support.
+- Even if I have access to certain files, I don't open them if it's not an official procedure.
+- I familiarize myself with the laws and follow them.
+
+- Signed: Mykyta Mishchenko
+- Date: 24.9.2026
+
