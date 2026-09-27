@@ -4,7 +4,7 @@ Living evidence map for *Kyberturvallisuus 15 ECVET*.
 I update this file as I complete assignments, linking each to the
 competence(s) it demonstrates.
 
-Last updated: 1.9.2026
+Last updated: 27.9.2026
 
 ---
 
@@ -13,10 +13,10 @@ Last updated: 1.9.2026
 
 | Competence | Evidence (assignment + link) | Notes / what it demonstrates |
 |---|---|---|
-| Tuntee CIA käsitteet (knows CIA concepts) |  |  |
-| Ymmärtää saavutettavuuden käsitteen ja siihen kohdistuvat uhat (understands availability and its threats) |  |  |
-| Ymmärtää luottamuksellisuuden käsitteen ja siihen kohdistuvat uhat (understands confidentiality and its threats) |  |  |
-| Ymmärtää eheyden käsitteen ja siihen kohdistuvat uhat (understands integrity and its threats) |  |  |
+| Tuntee CIA käsitteet (knows CIA concepts) |U2-01a https://proamis-moodle.fi/mod/assign/view.php?id=17581|It demonstrates what is Confidentility, Integrity and Availability (U2-01)|
+| Ymmärtää saavutettavuuden käsitteen ja siihen kohdistuvat uhat (understands availability and its threats) |U2-01a https://proamis-moodle.fi/mod/assign/view.php?id=17581|It shows whether the information or date I need is available|
+| Ymmärtää luottamuksellisuuden käsitteen ja siihen kohdistuvat uhat (understands confidentiality and its threats) |U2-01a https://proamis-moodle.fi/mod/assign/view.php?id=17581|This shows who has access to the information|
+| Ymmärtää eheyden käsitteen ja siihen kohdistuvat uhat (understands integrity and its threats) |U2-01a https://proamis-moodle.fi/mod/assign/view.php?id=17581|It shows whether the files or the date have been modified or corrupted|
 
 ---
 
@@ -28,7 +28,7 @@ Last updated: 1.9.2026
 | Osaa tehdä laitteiden suojauksen kannalta tärkeät ohjelmistoasennukset ja asetukset sekä päivittää ne tarvittaessa (can install and configure device security software, and keep it updated) |  |  |
 | Osaa huomioida tietoturvan tiedonsiirrossa ja tallennuksessa (can address security in data transmission and storage) |  |  |
 | Huomioi laitteiden fyysisen suojauksen kotona, työpaikalla ja matkustettaessa (addresses physical device security at home, at work, and while travelling) |  |  |
-| Tunnistaa sosiaalisen manipuloinnin keinot ja osaa varautua niihin (recognizes social engineering methods and can defend against them) |  |  |
+| Tunnistaa sosiaalisen manipuloinnin keinot ja osaa varautua niihin (recognizes social engineering methods and can defend against them) |U2-02a https://proamis-moodle.fi/mod/assign/view.php?id=17584|Social engineering demonstrates a method for attacking a specific target or organization.|
 
 ---
 
