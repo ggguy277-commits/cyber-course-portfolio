@@ -380,7 +380,10 @@ Output:
 
 Command:
 ```
-mkdir -p ~/cyber-course/unit{1,2,3/{osint,recon,crypto},scratch}
+mkdir -p ~/cyber-course/unit{1,2,3/{osint,recon,crypto}}
+mkdir -p ~/cyber-course/scratch
 ```
+
+## Q12: What key combination did you use to save? What key combination did you use to exit?
 
 **Answer:** 
