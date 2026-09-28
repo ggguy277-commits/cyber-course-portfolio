@@ -4,7 +4,7 @@ Living evidence map for *Kyberturvallisuus 15 ECVET*.
 I update this file as I complete assignments, linking each to the
 competence(s) it demonstrates.
 
-Last updated: 27.9.2026
+Last updated: 28.9.2026
 
 ---
 
@@ -25,9 +25,9 @@ Last updated: 27.9.2026
 
 | Competence | Evidence (assignment + link) | Notes / what it demonstrates |
 |---|---|---|
-| Osaa tehdä laitteiden suojauksen kannalta tärkeät ohjelmistoasennukset ja asetukset sekä päivittää ne tarvittaessa (can install and configure device security software, and keep it updated) |  |  |
+| Osaa tehdä laitteiden suojauksen kannalta tärkeät ohjelmistoasennukset ja asetukset sekä päivittää ne tarvittaessa (can install and configure device security software, and keep it updated) |U1-04c https://proamis-moodle.fi/mod/assign/view.php?id=17103 |Because of this assignment, I know how to install operating systems on a machine and how to download updates.|
 | Osaa huomioida tietoturvan tiedonsiirrossa ja tallennuksessa (can address security in data transmission and storage) |  |  |
-| Huomioi laitteiden fyysisen suojauksen kotona, työpaikalla ja matkustettaessa (addresses physical device security at home, at work, and while travelling) |  |  |
+| Huomioi laitteiden fyysisen suojauksen kotona, työpaikalla ja matkustettaessa (addresses physical device security at home, at work, and while travelling) | |  |
 | Tunnistaa sosiaalisen manipuloinnin keinot ja osaa varautua niihin (recognizes social engineering methods and can defend against them) |U2-02a https://proamis-moodle.fi/mod/assign/view.php?id=17584|Social engineering demonstrates a method for attacking a specific target or organization.|
 
 ---
@@ -54,12 +54,11 @@ Last updated: 27.9.2026
 
 ## My portfolio overall
 
-Brief description of how my portfolio is organized:
-[2–3 sentences describing the structure of your repo, written when finalizing]
+My portfolio isn't finished yet; I'm trying to complete my assignments because I missed a whole month of classes while I was working on my summer job.
 
 ## Closing reflection
 
 Filled in at the end of the course:
-- Which assignment do I think most strongly demonstrates my learning?
-- Which competence am I least confident about, and why?
+- Which assignment do I think most strongly demonstrates my learning? I think it's U2-01a Assignment: CIA Triad Case Studies https://proamis-moodle.fi/mod/assign/view.php?id=17581 and maybe U2-02a Assignment: Social Engineering Tabletop Exercise https://proamis-moodle.fi/mod/assign/view.php?id=17584, U2-05a Assignment: Ethical and Legal Conduct in Tech and Cybersecurity https://proamis-moodle.fi/mod/assign/view.php?id=18085.
+- Which competence am I least confident about, and why? 
 - One thing I want to keep learning about after this course ends.
