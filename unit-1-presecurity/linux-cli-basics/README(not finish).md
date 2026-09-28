@@ -393,4 +393,454 @@ touch ~/cyber-course/scratch/{a,b,c}.txt
 cp ~/cyber-course/scratch/a.txt ~/cyber-course/unit1/intro.txt
 ```
 ```
+mv ~/cyber-course/scratch/b.txt ~/cyber-course/unit2/
+```
+```
+mv ~/cyber-course/scratch/c.txt ~/cyber-course/scratch/notes.txt
+```
+```
+nano intro.txt
+```
 
+**Answer:** Ctrl+O to save and Ctrl+X to exit.
+
+## Q13: Why did rmdir fail (or succeed)?
+
+Command:
+```
+rmdir ~/cyber-course/scratch
+```
+
+Output:
+```
+rmdir: failed to remove '/home/varia/cyber-course/scratch': Directory not empty
+```
+
+**Answer:** Directory is not empty.
+
+Command:
+```
+rm -rf ~/cyber-course/scratch
+```
+**Answer:** Now I've got rid of scratch.
+
+# Part 4
+
+## Q14: Which Debian version do you have?
+
+
+Command:
+```
+cat /etc/os-release
+```
+
+Output:
+```
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.7
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+```
+
+**Answer:** 13.7
+
+## Q15: What kind of messages do you see? Are they recent?
+
+Command:
+```
+head -n 5 /etc/services
+```
+
+Output:
+```
+# Network services, Internet style
+#
+# Updated from https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml .
+#
+# New ports will be added on request if they have been officially assigned
+```
+Command:
+```
+sudo tail -n 10 /var/log/syslog
+```
+
+Output:
+```
+tail: cannot open '/var/log/syslog' for reading: No such file or directory
+```
+
+# Part 5
+
+## Q16: How many lines were returned? (Hint: pipe to wc -l.)
+
+Command:
+```
+grep "ssh" /etc/services
+```
+
+Output:
+```
+ssh		22/tcp				# SSH Remote Login Protocol
+```
+
+**Answer:** 1
+
+## Q17: How would you modify the command to show only .conf files modified in the last 7 days?
+
+
+Command:
+```
+sudo grep -i "error" /var/log/syslog
+```
+
+Output:
+```
+grep: /var/log/syslog: No such file or directory
+```
+Command:
+```
+find /etc -name "*.conf"
+```
+
+Output:
+```
+/etc/libreoffice/psprint.conf
+/etc/fonts/fonts.conf
+/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf
+/etc/fonts/conf.avail/30-droid-noto-mono.conf
+/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf
+/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf
+/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf
+/etc/fonts/conf.avail/57-dejavu-sans.conf
+/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf
+/etc/fonts/conf.avail/57-dejavu-sans-mono.conf
+/etc/fonts/conf.avail/65-droid-sans-fallback.conf
+/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf
+/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf
+/etc/fonts/conf.avail/57-dejavu-serif.conf
+/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf
+/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf
+/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf
+/etc/fonts/conf.d/11-lcdfilter-default.conf
+/etc/fonts/conf.d/65-nonlatin.conf
+/etc/fonts/conf.d/48-spacing.conf
+/etc/fonts/conf.d/61-urw-nimbus-sans.conf
+/etc/fonts/conf.d/60-generic.conf
+/etc/fonts/conf.d/70-no-bitmaps-except-emoji.conf
+/etc/fonts/conf.d/61-urw-c059.conf
+/etc/fonts/conf.d/61-urw-p052.conf
+/etc/fonts/conf.d/61-urw-bookman.conf
+/etc/fonts/conf.d/61-urw-fallback-generics.conf
+/etc/fonts/conf.d/45-generic.conf
+/etc/fonts/conf.d/10-scale-bitmap-fonts.conf
+/etc/fonts/conf.d/61-urw-nimbus-mono-ps.conf
+/etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf
+/etc/fonts/conf.d/61-urw-nimbus-roman.conf
+/etc/fonts/conf.d/45-latin.conf
+/etc/fonts/conf.d/60-latin.conf
+/etc/fonts/conf.d/30-opensymbol.conf
+/etc/fonts/conf.d/61-urw-fallback-backwards.conf
+/etc/fonts/conf.d/61-urw-gothic.conf
+/etc/fonts/conf.d/30-metric-aliases.conf
+/etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf
+/etc/fonts/conf.d/90-synthetic.conf
+/etc/fonts/conf.d/65-fonts-persian.conf
+/etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf
+/etc/fonts/conf.d/57-dejavu-sans.conf
+/etc/fonts/conf.d/10-sub-pixel-none.conf
+/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf
+/etc/fonts/conf.d/57-dejavu-sans-mono.conf
+/etc/fonts/conf.d/61-urw-z003.conf
+/etc/fonts/conf.d/80-delicious.conf
+/etc/fonts/conf.d/40-nonlatin.conf
+/etc/fonts/conf.d/49-sansserif.conf
+/etc/fonts/conf.d/58-dejavu-lgc-sans.conf
+/etc/fonts/conf.d/10-hinting-slight.conf
+/etc/fonts/conf.d/58-dejavu-lgc-serif.conf
+/etc/fonts/conf.d/57-dejavu-serif.conf
+/etc/fonts/conf.d/51-local.conf
+/etc/fonts/conf.d/10-yes-antialias.conf
+/etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf
+/etc/fonts/conf.d/20-unhint-small-vera.conf
+/etc/fonts/conf.d/61-urw-d050000l.conf
+/etc/fonts/conf.d/61-urw-standard-symbols-ps.conf
+/etc/fonts/conf.d/50-user.conf
+/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf
+/etc/fonts/conf.d/69-unifont.conf
+/etc/fwupd/fwupd.conf
+/etc/fwupd/remotes.d/lvfs.conf
+/etc/fwupd/remotes.d/vendor-directory.conf
+/etc/fwupd/remotes.d/lvfs-testing.conf
+/etc/plymouth/plymouthd.conf
+/etc/apache2/conf-available/javascript-common.conf
+/etc/apache2/mods-available/dnssd.conf
+/etc/gdm3/daemon.conf
+/etc/speech-dispatcher/speechd.conf
+/etc/speech-dispatcher/clients/emacs.conf
+/etc/speech-dispatcher/modules/espeak.conf
+/etc/speech-dispatcher/modules/espeak-mbrola-generic.conf
+/etc/speech-dispatcher/modules/llia_phon-generic.conf
+/etc/speech-dispatcher/modules/dtk-generic.conf
+/etc/speech-dispatcher/modules/festival.conf
+/etc/speech-dispatcher/modules/epos-generic.conf
+/etc/speech-dispatcher/modules/swift-generic.conf
+/etc/speech-dispatcher/modules/flite.conf
+/etc/speech-dispatcher/modules/mimic3-generic.conf
+/etc/speech-dispatcher/modules/espeak-ng.conf
+/etc/speech-dispatcher/modules/openjtalk.conf
+/etc/speech-dispatcher/modules/mary-generic.conf
+/etc/speech-dispatcher/modules/cicero.conf
+/etc/speech-dispatcher/modules/espeak-ng-mbrola.conf
+/etc/speech-dispatcher/modules/espeak-ng-mbrola-generic.conf
+/etc/modprobe.d/amd64-microcode-blacklist.conf
+/etc/modprobe.d/dkms.conf
+/etc/host.conf
+/etc/sensors3.conf
+/etc/adduser.conf
+/etc/rygel.conf
+/etc/systemd/journald.conf
+/etc/systemd/system.conf
+/etc/systemd/timesyncd.conf
+/etc/systemd/pstore.conf
+/etc/systemd/logind.conf
+/etc/systemd/networkd.conf
+/etc/systemd/user.conf
+/etc/systemd/sleep.conf
+/etc/gai.conf
+/etc/usb_modeswitch.conf
+/etc/bluetooth/network.conf
+/etc/bluetooth/input.conf
+/etc/bluetooth/main.conf
+/etc/kernel-img.conf
+/etc/modules-load.d/cups-filters.conf
+/etc/modules-load.d/modules.conf
+/etc/ld.so.conf.d/x86_64-linux-gnu.conf
+/etc/ld.so.conf.d/libc.conf
+/etc/ld.so.conf.d/fakeroot-x86_64-linux-gnu.conf
+/etc/ld.so.conf
+/etc/pam.conf
+/etc/geoclue/geoclue.conf
+/etc/nftables.conf
+/etc/ghostscript/fontmap.d/10fonts-urw-base35.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-korea1.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-japan1.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-japan2.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-gb1.conf
+/etc/ghostscript/cidfmap.d/90gs-cjk-resource-cns1.conf
+/etc/debconf.conf
+/etc/fuse.conf
+/etc/deluser.conf
+/etc/udev/udev.conf
+/etc/udev/iocost.conf
+/etc/udisks2/udisks2.conf
+/etc/libao.conf
+/etc/xdg/user-dirs.conf
+/etc/locale.conf
+/etc/sudo.conf
+/etc/selinux/semanage.conf
+/etc/initramfs-tools/initramfs.conf
+/etc/initramfs-tools/update-initramfs.conf
+find: ‘/etc/ssl/private’: Permission denied
+/etc/snmp/snmp.conf
+find: ‘/etc/credstore’: Permission denied
+/etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+/etc/mke2fs.conf
+/etc/sudo_logsrvd.conf
+/etc/security/pam_env.conf
+/etc/security/limits.conf
+/etc/security/access.conf
+/etc/security/namespace.conf
+/etc/security/pwquality.conf
+/etc/security/sepermit.conf
+/etc/security/group.conf
+/etc/security/time.conf
+/etc/security/limits.d/25-pw-rlimits.conf
+/etc/security/limits.d/10-coredump-debian.conf
+/etc/security/pwhistory.conf
+/etc/security/faillock.conf
+/etc/xattr.conf
+find: ‘/etc/credstore.encrypted’: Permission denied
+/etc/dkms/framework.conf.d/autoinstall_all_kernels.conf
+/etc/dkms/framework.conf
+/etc/openal/alsoft.conf
+/etc/NetworkManager/NetworkManager.conf
+/etc/vconsole.conf
+/etc/ldap/ldap.conf
+/etc/nsswitch.conf
+/etc/cracklib/cracklib.conf
+/etc/e2scrub.conf
+/etc/apt/listchanges.conf
+/etc/lighttpd/conf-available/90-javascript-alias.conf
+/etc/lighttpd/conf-enabled/90-javascript-alias.conf
+/etc/alsa/conf.d/50-pipewire.conf
+/etc/alsa/conf.d/99-pipewire-default.conf
+/etc/dhcpcd.conf
+/etc/pulse/client.conf
+/etc/reportbug.conf
+find: ‘/etc/polkit-1/rules.d’: Permission denied
+/etc/ipp-usb/ipp-usb.conf
+/etc/ucf.conf
+/etc/apparmor/parser.conf
+/etc/ca-certificates.conf
+/etc/dbus-1/system.d/org.opensuse.CupsPkHelper.Mechanism.conf
+/etc/dbus-1/system.d/com.redhat.PrinterDriversInstaller.conf
+/etc/dbus-1/system.d/com.redhat.NewPrinterNotification.conf
+/etc/logrotate.conf
+/etc/depmod.d/vboxvideo-upstream.conf
+/etc/avahi/avahi-daemon.conf
+/etc/environment.d/90qt-a11y.conf
+/etc/environment.d/90atk-adaptor.conf
+/etc/libaudit.conf
+/etc/resolv.conf
+/etc/gtk-3.0/im-multipress.conf
+/etc/sane.d/coolscan3.conf
+/etc/sane.d/hp4200.conf
+/etc/sane.d/pixma.conf
+/etc/sane.d/microtek2.conf
+/etc/sane.d/hp3900.conf
+/etc/sane.d/gt68xx.conf
+/etc/sane.d/st400.conf
+/etc/sane.d/epson2.conf
+/etc/sane.d/escl.conf
+/etc/sane.d/mustek_pp.conf
+/etc/sane.d/sm3840.conf
+/etc/sane.d/cardscan.conf
+/etc/sane.d/dc240.conf
+/etc/sane.d/kvs1025.conf
+/etc/sane.d/dll.conf
+/etc/sane.d/v4l.conf
+/etc/sane.d/magicolor.conf
+/etc/sane.d/epjitsu.conf
+/etc/sane.d/snapscan.conf
+/etc/sane.d/airscan.conf
+/etc/sane.d/kodak.conf
+/etc/sane.d/rts8891.conf
+/etc/sane.d/canon_dr.conf
+/etc/sane.d/teco2.conf
+/etc/sane.d/plustek.conf
+/etc/sane.d/ma1509.conf
+/etc/sane.d/epsonds.conf
+/etc/sane.d/dc210.conf
+/etc/sane.d/umax.conf
+/etc/sane.d/hpsj5s.conf
+/etc/sane.d/dc25.conf
+/etc/sane.d/mustek_usb.conf
+/etc/sane.d/lexmark.conf
+/etc/sane.d/matsushita.conf
+/etc/sane.d/sp15c.conf
+/etc/sane.d/umax_pp.conf
+/etc/sane.d/s9036.conf
+/etc/sane.d/coolscan2.conf
+/etc/sane.d/canon_pp.conf
+/etc/sane.d/avision.conf
+/etc/sane.d/canon_lide70.conf
+/etc/sane.d/canon630u.conf
+/etc/sane.d/umax1220u.conf
+/etc/sane.d/hp5400.conf
+/etc/sane.d/apple.conf
+/etc/sane.d/genesys.conf
+/etc/sane.d/sceptre.conf
+/etc/sane.d/epson.conf
+/etc/sane.d/teco1.conf
+/etc/sane.d/stv680.conf
+/etc/sane.d/dmc.conf
+/etc/sane.d/kodakaio.conf
+/etc/sane.d/sharp.conf
+/etc/sane.d/net.conf
+/etc/sane.d/u12.conf
+/etc/sane.d/leo.conf
+/etc/sane.d/mustek.conf
+/etc/sane.d/p5.conf
+/etc/sane.d/ricoh.conf
+/etc/sane.d/plustek_pp.conf
+/etc/sane.d/ibm.conf
+/etc/sane.d/teco3.conf
+/etc/sane.d/qcam.conf
+/etc/sane.d/fujitsu.conf
+/etc/sane.d/microtek.conf
+/etc/sane.d/nec.conf
+/etc/sane.d/canon.conf
+/etc/sane.d/pie.conf
+/etc/sane.d/xerox_mfp.conf
+/etc/sane.d/bh.conf
+/etc/sane.d/pieusb.conf
+/etc/sane.d/dell1600n_net.conf
+/etc/sane.d/agfafocus.conf
+/etc/sane.d/tamarack.conf
+/etc/sane.d/artec_eplus48u.conf
+/etc/sane.d/lexmark_x2600.conf
+/etc/sane.d/artec.conf
+/etc/sane.d/hp.conf
+/etc/sane.d/test.conf
+/etc/sane.d/coolscan.conf
+/etc/sane.d/saned.conf
+/etc/sane.d/hs2p.conf
+/etc/sane.d/abaton.conf
+/etc/sane.d/gphoto2.conf
+/etc/cups/snmp.conf
+/etc/cups/cupsd.conf
+find: ‘/etc/cups/ssl’: Permission denied
+/etc/cups/subscriptions.conf
+/etc/cups/cups-browsed.conf
+/etc/cups/cups-files.conf
+/etc/UPower/UPower.conf
+/etc/PackageKit/Vendor.conf
+/etc/PackageKit/PackageKit.conf
+
+```
+
+**Answer:** I would use
+```
+find /etc -name "*.conf" -mtime -7
+```
+
+## Q18: Where are these commands actually located on the filesystem?
+
+Command:
+```
+which ls
+```
+
+Output:
+```
+/usr/bin/ls
+```
+Command:
+```
+which nano
+```
+
+Output:
+```
+/usr/bin/nano
+```
+# Part 6
+
+## Q19: What does the | symbol do here?
+
+
+**Answer:** This `|` is a pipe. The `history` command displays a huge list of all commands, and `tail -n 20` takes that list and displays only the last 20 lines.
+
+## Q20: What is the difference between > and >>?
+
+**Answer:** The `>` operator overwrites the result by erasing what was written before, and the `>>` operator simply appends a new entry without erasing anything.
+
+## Q21: What was the output, and why?
+
+Command:
+```
+
+```
+
+Output:
+```
+
+```
+
+**Answer:** 
